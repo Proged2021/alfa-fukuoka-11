@@ -1,0 +1,47 @@
+html{
+    background-color: rgb(26, 26, 26);
+
+}
+body{
+  text-align:center;
+  margin:0 auto;
+}
+p{
+    color:rgb(100, 231, 248);
+    font-size: 175%;
+    top: auto;
+  }
+  button{
+    z-index: 2;
+    top: auto;
+    background-color: rgb(112, 112, 112);
+    color: rgb(31, 31, 31);
+    width: 12%;
+    height: 3%;
+    font-size: 30px;
+    font-family: "游ゴシック", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+    border-radius: 10px 10px 10px 10px;
+  }
+  video{
+   position: fixed;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: 0;  
+}
+#button1{
+  background-color: black;
+  z-index: 2;
+    color: rgb(175, 175, 175);
+    width: 3%;
+    height: 2%;
+    font-size: 6px;
+  position: fixed;
+  top: 94%;
+  right: 1%;
+  bottom: 0%;
+  overflow: 0;  
+  
+
+}
