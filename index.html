@@ -9,10 +9,11 @@
 </head>
 <body>
     <div id="div">
-        <p class="up1">このタブでは音声が再生されます。音声を再生しない場合は『No』を押してください。<br>『No』を押した場合でもビデオは再生されます。</p>
+        <p class="up1">このタブでは音声が再生されます。音声を再生しない場合は『No』を押してください。<br>『No』を押した場合でもビデオは再生されます。<br>なお、ここで表示されたストーリーは問題のページでも確認できます。
+        </p>
         <button class="up2" id="yes">Yes</button>"    "<button class="up3" id="no">No</button>
     </div>
-    <video id="video"  width="100%" height="100%" muted onended="location.href='inport.html'; ">
+    <video id="video"  width="100%" height="100%" muted playsinline preload="auto" onended="location.href='inport.html'; ">
         <source  src="video.mp4">
     </video>
     <button id="button1" type="button" onclick="location.href='inport.html'">Skip</button>
