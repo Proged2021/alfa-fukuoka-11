@@ -419,6 +419,8 @@ button {
 
 .story__note__outer {
   width: 860px;
+  background-color: #999;
+  border: solid;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -516,3 +518,11 @@ button {
   display: none;
 }
 /*# sourceMappingURL=style.css.map */
+
+/* myCSS */
+div{
+  background-color: #999;
+}
+li{
+  background-color: #999;
+}
