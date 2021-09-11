@@ -87,9 +87,9 @@ Youtube貼り付けここまで -->
             <div class="clear-message">
               <div class="clear-message__title">STAGE：１  クリア！</div>
               <div class="clear-message__content">辛くもその『第一ラウンド』とやらをクリアしたのだが、奴はこの程度では許してくれないらしい。<br>
-                「これ、やっぱ観覧車だよなぁ」そう呟いた角屋 尚史　　かどや たかふみに追従するように佐口 命　　さぐち みことも首肯した。<br>
+                「これ、やっぱ観覧車だよなぁ」そう呟いた角屋 尚史　かどや たかふみに追従するように佐口 命　さぐち みことも首肯した。<br>
                 佐口 命　　さぐち みこと　「そういや、観覧車って回ってたか？」<br/>
-                だが私もAも覚えておらず首位を傾げるだけだ。結局言って見ないとわからないと言う結論に至り、<br/>
+                だが私もAも覚えておらず首位を傾げるだけだ。結局行って見ないとわからないと言う結論に至り、<br/>
                 私たちは重い腰を持ち上げて歩き出した。<br/>
               </div>
               <button v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage2'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
@@ -100,22 +100,29 @@ Youtube貼り付けここまで -->
 
       </div>
       <!-- STAGE1　ここまで -->
-
+      
+      <!-- STAGE2への橋渡し　-->
+      <section v-if="clear['stage1']" v-bind:class="{isClear:clear['stage1']}"  class="section section--clear bg-color--gray">
+          <div class="container">
+            <div class="clear-message">
+              <div class="clear-message__title">数分後</div>
+              <div class="clear-message__content">私たちの予想は裏切られることになった。<br>
+               光はついていてしっかりと回転する観覧車がそこにはあった。<br>
+               何か嫌な予感がしたのか、角屋は佐口の頭を押さえてしゃがみこんだ。<br/>
+                私は訳も分からずだったが、スマホの画面をよく見ると一瞬でその疑念はふきとんだ。<br/>
+              </div>
+              <button v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage2'" class="clear-message__btn btn">次へ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
+            </div>
+          </div>
+        </section>
+        <!-- STAGE2への橋渡しここまで-->
+      
       <!-- STAGE2　ここから -->
       <!---------------------------------------------------------------------
         クリア画面の「次のステージへ」ボタンをクリックしたら表示します。
         v-if="next['stage1']"はnext['stage1']がtrueになったら表示します。
       ----------------------------------------------------------------------->
-      <div v-if="next['stage1']" id="sectionStage2" class="stage">
-        <section>
-          <div class="section">
-            <div class="container">
-              <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：2</span>黒板に書かれている謎を解け！</h2>
-              <p class="text-center">家庭科室に入ることができた！<br>
-                すぐに目に入ったのは黒板にある４つの謎。<br>
-                これらを解くことで、きっと次のステップに繋がるはずだ！</p>
-            </div>
-          </div>
+
           <div class="stage-column__container section bg-color--keycolor">
             <div class="container">
               <h2 class="section-title"><span class="section-title__stage">STAGE：2</span>キーワードを入力</h2>
