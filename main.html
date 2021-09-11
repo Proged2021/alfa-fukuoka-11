@@ -82,24 +82,29 @@ Youtube貼り付けここまで -->
           v-if="clear['stage1']"はclear['stage1']がtrueになったら表示します。
           v-bind:class="{isClear:clear['stage1']}"はclear['stage1']がtrueになったら「isClear」クラスを追加します。
         -------------------------------------------------------------------------------------------------------->
+        
+      <!-- STAGE2への橋渡し1-->
         <section v-if="clear['stage1']" v-bind:class="{isClear:clear['stage1']}"  class="section section--clear bg-color--gray">
           <div class="container">
             <div class="clear-message">
-              <div class="clear-message__title">STAGE：１  クリア！</div>
-              <div class="clear-message__content">辛くもその『第一ラウンド』とやらをクリアしたのだが、奴はこの程度では許してくれないらしい。<br>
-                「これ、やっぱ観覧車だよなぁ」そう呟いた角屋 尚史　かどや たかふみに追従するように佐口 命　さぐち みことも首肯した。<br>
-                佐口 命　　さぐち みこと　「そういや、観覧車って回ってたか？」<br/>
-                だが私もAも覚えておらず首位を傾げるだけだ。結局行って見ないとわからないと言う結論に至り、<br/>
+              <div class="clear-message__title">STAGE：１ クリア</div>
+              <div class="clear-message__content">>辛くもその『第一ラウンド』とやらをクリアしたのだが<br>
+               奴はこの程度では許してくれないらしい。<br>
+               何か嫌な予感がしたのか、角屋は佐口の頭を押さえてしゃがみこんだ。<br/>
+                「これ、やっぱ観覧車だよなぁ」<br/>
+                そう呟いた角屋 尚史　かどや たかふみに追従するように佐口 命　さぐち みことも首肯した。<br>
+                佐口 命　　さぐち みこと　「そういや、観覧車って回ってたか？」<br>
+                だが私もAも覚えておらず首位を傾げるだけだ。結局行って見ないとわからないと言う結論に至り<br/>
                 私たちは重い腰を持ち上げて歩き出した。<br/>
               </div>
-              <button v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage2'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
+              <button v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage2'" class="clear-message__btn btn">次へ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
         </section>
         <!-- STAGE1クリア画面　ここまで -->
       <!-- STAGE1　ここまで -->
       
-      <!-- STAGE2への橋渡し　-->
+      <!-- STAGE2への橋渡し-->
       <section v-if="clear['stage1']" v-bind:class="{isClear:clear['stage1']}"  class="section section--clear bg-color--gray">
           <div class="container">
             <div class="clear-message">
@@ -109,7 +114,7 @@ Youtube貼り付けここまで -->
                何か嫌な予感がしたのか、角屋は佐口の頭を押さえてしゃがみこんだ。<br/>
                 私は訳も分からずだったが、スマホの画面をよく見ると一瞬でその疑念はふきとんだ。<br/>
               </div>
-              <button v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage３'" class="clear-message__btn btn">次へ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
+              <button v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage2'" class="clear-message__btn btn">次へ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
         </section>
