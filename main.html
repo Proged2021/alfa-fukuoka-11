@@ -101,12 +101,29 @@ Youtube貼り付けここまで -->
               <div class="clear-message__title">STAGE：１  クリア！</div>
               <div class="clear-message__content">辛くもその『第一ラウンド』とやらをクリアしたのだが<br>
                 奴はこの程度では許してくれないらしい。<br>
-                何か嫌な予感がしたのか、角屋は佐口の頭を押さえてしゃがみこんだ。<br/>
                  「これ、やっぱ観覧車だよなぁ」<br/>
                  そう呟いた角屋 尚史　かどや たかふみに追従するように佐口 命　さぐち みことも首肯した。<br>
                  佐口 命　　さぐち みこと　「そういや、観覧車って回ってたか？」<br>
                  だが私もAも覚えておらず首位を傾げるだけだ。結局行って見ないとわからないと言う結論に至り<br/>
                  私たちは重い腰を持ち上げて歩き出した。<br/>
+              <button v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage2'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
+            </div>
+          </div>
+        </section>
+        <!-- STAGE1クリア画面　ここまで -->
+<!------------------------------------------------------------------------------------------------------
+          ステージを全問正解するとclear['stage1']がtrusになります。
+          v-if="clear['stage1']"はclear['stage1']がtrueになったら表示します。
+          v-bind:class="{isClear:clear['stage1']}"はclear['stage1']がtrueになったら「isClear」クラスを追加します。
+        -------------------------------------------------------------------------------------------------------->
+        <section v-if="clear['stage1']" v-bind:class="{isClear:clear['stage1']}"  class="section section--clear bg-color--gray">
+          <div class="container">
+            <div class="clear-message">
+              <div class="clear-message__title">数分後</div>
+              <div class="clear-message__content"私たちの予想は裏切られることになった。<br>
+光はついていてしっかりと回転する観覧車がそこにはあった。<br>
+しかし、何か嫌な予感がしたのか、AはCの頭を押さえてしゃがみこんだ。<br/>
+私は訳も分からずだったが、スマホの画面をよく見ると一瞬でその疑念はふきとんだ。<br/>
               <button v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage2'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
