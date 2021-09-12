@@ -1,5 +1,5 @@
 html{
-    background-color: rgb(26, 26, 26);
+    background-color:#740A00
 
 }
 body{
@@ -11,9 +11,24 @@ p{
     font-size: 175%;
     top: auto;
   }
+  #no{
+    position: fixed;
+    top: 28%;
+    right: 37%;
+    color: rgb(31, 31, 31);
+    width: 12%;
+    height: 7%;
+  }
+  #yes{
+    position: fixed;
+    top: 28%;
+    right: 52%;
+    color: rgb(31, 31, 31);
+    width: 12%;
+    height: 7%;
+  }
   button{
     z-index: 2;
-    top: auto;
     background-color: rgb(112, 112, 112);
     color: rgb(31, 31, 31);
     width: 12%;
