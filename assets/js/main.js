@@ -131,14 +131,19 @@ app.mount('#stage')
 
 const div = document.getElementById("div");
 const yesButton = document.getElementById("buton");
-const audio = new Audio("mainbgm.mp3");
+const audio = new Audio("main.mp3");
 var ele = document.documentElement;
+let elem_loop = document.getElementById("buton");
 
 function hideDiv() {
 div.style.display = "none";
 }
 yesButton.addEventListener("click", () => {
-audio.play();
+// audio.play();
 ele.requestFullscreen();
 hideDiv();
 });
+elem_loop.addEventListener("click", function(){
+	audio.play();
+	audio.loop = true;  // ループ再生
+}, false);
