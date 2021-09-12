@@ -21,3 +21,10 @@ setTimeout(function(){
     window.location.href = 'inport.html';
     },110*1000);
 });
+
+function hoge() {
+    // 全画面表示
+    var ele = document.documentElement;
+    ele.requestFullscreen();
+  }; 
+        
