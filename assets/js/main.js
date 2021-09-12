@@ -128,3 +128,17 @@ app.component('answer-input', {
 })
 
 app.mount('#stage')
+
+const div = document.getElementById("div");
+const yesButton = document.getElementById("buton");
+const audio = new Audio("mainbgm.mp3");
+var ele = document.documentElement;
+
+function hideDiv() {
+div.style.display = "none";
+}
+yesButton.addEventListener("click", () => {
+audio.play();
+ele.requestFullscreen();
+hideDiv();
+});
