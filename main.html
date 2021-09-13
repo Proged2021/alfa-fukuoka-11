@@ -123,7 +123,7 @@ Youtube貼り付けここまで -->
         クリア画面の「次のステージへ」ボタンをクリックしたら表示します。
         v-if="next['stage1']"はnext['stage1']がtrueになったら表示します。
       ----------------------------------------------------------------------->
-    
+   <div v-if="next['stage1']" id="sectionStage2" class="stage">
           <div class="stage-column__container section bg-color--keycolor">
             <div class="container">
               <h2 class="section-title"><span class="section-title__stage">STAGE：2</span>キーワードを入力</h2>
