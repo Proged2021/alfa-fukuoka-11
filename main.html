@@ -27,7 +27,7 @@
   <main class="main main-page">
     <!-- タイトルエリア　ここから -->
     <h1 class="main-title"><img src="assets/images/main-image.png" alt="封鎖された家庭科室からの脱出"></h1>
-    <!-- タイトルエリア　ここまで -->
+    <!-- タイトルエリア　ここで -->
     <div id="stage">
 
       <!-- STAGE1　ここから -->
@@ -75,7 +75,7 @@ Youtube貼り付けここまで -->
           <div class="container">
             <h2 class="section-title"><span class="section-title__stage">STAGE：1</span>キーワードを入力</h2>
             <!------------------------------------------------------------------------------------------------------------
-              解答入力欄のコンポーネントです。入力欄・送信ボタン・エラーメッセージを表示します
+              解答入力欄のコンポーネントです。入力欄・送信ボタン・エラーメッセージを表示しま
               v-bind:correct="correctAnswer['stage1']['q1']" は正解の解答を指します。
               v-on:answer-input="answerInput($event, 'stage1', 1)" は送信ボタンをクリックした時の動作を決める関数です。
               2番目、3番目の1引数 'stage1', 1 はstage1の1問目ということになります。
@@ -115,22 +115,7 @@ Youtube貼り付けここまで -->
           ステージを全問正解するとclear['stage1']がtrusになります。
           v-if="clear['stage1']"はclear['stage1']がtrueになったら表示します。
           v-bind:class="{isClear:clear['stage1']}"はclear['stage1']がtrueになったら「isClear」クラスを追加します。
-        -------------------------------------------------------------------------------------------------------->
-        <section v-if="clear['stage1']" v-bind:class="{isClear:clear['stage1']}"  class="section section--clear bg-color--gray">
-          <div class="container">
-            <div class="clear-message">
-              <div class="clear-message__title">数分後</div>
-              <div class="clear-message__content"私たちの予想は裏切られることになった。<br>
-光はついていてしっかりと回転する観覧車がそこにはあった。<br>
-しかし、何か嫌な予感がしたのか、AはCの頭を押さえてしゃがみこんだ。<br/>
-私は訳も分からずだったが、スマホの画面をよく見ると一瞬でその疑念はふきとんだ。<br/>
-              <button v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage2'" class="clear-message__btn btn">次へ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
-            </div>
-          </div>
-        </section>
-        <!-- STAGE1クリア画面　ここまで -->
-
-      </div>
+        --------------------------------------------------------------------------------------------------------
       <!-- STAGE1　ここまで -->
 
       <!-- STAGE2　ここから -->
@@ -143,9 +128,16 @@ Youtube貼り付けここまで -->
           <div class="section">
             <div class="container">
               <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：2</span>黒板に書かれている謎を解け！</h2>
-              <p class="text-center">家科室に入ることができた！<br>
-                すぐに目に入ったのは黒板にある４つの謎。<br>
-                これらを解くことで、きっと次のステップに繋がるはずだ！</p>
+              <p class="text-center">数分後<br>
+                光はついていてしっかりと回転する観覧車がそこにはあった。<br>
+              しかし、何か嫌な予感がしたのか、AはCの頭を押さえてしゃがみこんだ。</p>
+              私は訳も分からずだったが、スマホの画面をよく見ると一瞬でその疑念はふきとんだ。</p>
+             <p class="text-center">観覧車の制御室にピエロが入っていくところを目撃したからだ。<br>
+               私もびっくりしたが、彼らはそれ以上だっただろう</p>
+            明確な死の権化が視認できる場所にいるのだから。</p>
+          程なくして、観覧車が止まりピエロが出てきた。</p>
+        ピエロは幸いなことに反対方向に去っていった。</p>
+  　　　　　　　　　　　<p class="text-center">制御室に入ると電源を入れるにはパスワードを入力しなければいけなかった。<br>
             </div>
           </div>
           <div class="stage-column__container section bg-color--keycolor">
