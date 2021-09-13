@@ -10,14 +10,14 @@
 }
 
 html {
-  background-color: rgb(70, 70, 70);
+  background: color #2f2e33;;
   font-size: 18px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 body {
-  background-color: rgb(70, 70, 70);
+  background-color: #2f2e33;
   overflow-x: hidden;
   font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
   font-size: 18px;
@@ -26,7 +26,6 @@ body {
   text-decoration: none;
   border: none;
   list-style: none;
-  color: #000;
   margin: 0;
 }
 
@@ -60,19 +59,19 @@ input[type=text] {
 }
 
 ::-webkit-input-placeholder {
-  color: #999;
+  color: #2F2E33;
 }
 
 :-ms-input-placeholder {
-  color: #999;
+  color: #2F2E33;
 }
 
 ::-ms-input-placeholder {
-  color: #999;
+  color: #2F2E33;
 }
 
 ::placeholder {
-  color: #999;
+  color: #2F2E33;
 }
 
 button {
@@ -80,8 +79,7 @@ button {
   display: block;
   border: none;
   margin: 0 auto;
-  background-color: #006837;
-  color: #fff;
+  background-color: #993C3C;
   width: 287px;
   height: 55px;
 }
@@ -116,6 +114,7 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+background-color: #2f2e33;
 }
 
 .container {
@@ -149,7 +148,7 @@ button {
 }
 
 .card {
-  background-color: #fff;
+  background-color: #FFFFFF;
   margin-bottom: 20px;
   height: 100%;
 }
@@ -177,7 +176,7 @@ button {
   content: '';
   width: calc(100% - 60px);
   height: 7px;
-  background-color: #fcee21;
+  background-color: #993C3C;
   position: absolute;
   top: -10px;
   left: 30px;
@@ -241,15 +240,15 @@ button {
 * Color
 *********************/
 .bg-color--keycolor {
-  background-color: #39b54a;
+  background-color: #2F2E33;
 }
 
 .bg-color--subcolor {
-  background-color: #d9e021;
+  background-color: #993C3C;
 }
 
 .bg-color--gray {
-  background-color: #e6e6e6;
+  background-color: #2F2E33;
 }
 
 /*********************
@@ -266,7 +265,7 @@ button {
 }
 
 .sub-title__bg {
-  background-color: #fcee21;
+  background-color: #993C3C;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -276,7 +275,7 @@ button {
   line-height: 1.75;
   text-align: center;
   padding: 9px 20px;
-  background-color: #d9e021;
+  background-color: #993C3C;
   margin: 0 -20px 20px -20px;
 }
 
@@ -286,7 +285,7 @@ button {
 }
 
 .section-title--keycolorlight {
-  background-color: #8cc63f;
+  background-color: #993C3C;
 }
 
 .section-title--keycolorlight .section-title__stage {
@@ -294,7 +293,7 @@ button {
 }
 
 .section-title--keycolor {
-  background-color: #39b54a;
+  background-color: #993C3C;
 }
 
 .section-title--story {
@@ -309,7 +308,7 @@ button {
   line-height: 1.06667;
   margin: 0;
   padding-bottom: 15px;
-  color: #006837;
+  color: #3c8699;
 }
 
 .section-title--border::after {
@@ -338,8 +337,8 @@ button {
   display: block;
   text-decoration: none;
   cursor: pointer;
-  background-color: #006837;
-  color: #fff;
+  background-color: #993C3C;
+  color: #000;
   font-size: 24px;
   line-height: 1.54167;
   text-align: center;
@@ -367,12 +366,12 @@ button {
 * header
 *****************/
 .header {
-  background-color: rgb(70, 70, 70);
+  background-color: #2F2E33;
   height: 60px;
 }
 
 .header .container {
-  background-color: rgb(70, 70, 70);
+  background-color: #2F2E33;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -386,19 +385,19 @@ button {
 }
 
 .header__logo {
-  background-color: rgb(70, 70, 70);
+  background-color: #2F2E33;
   width: 330px;
   height: 42px;
 }
 
 .header__name {
-  background-color: rgb(70, 70, 70);
+  background-color: #2F2E33;
   font-size: 20px;
   line-height: 1.1;
 }
 
 .footer {
-  background-color: rgb(70, 70, 70);
+  background-color:#2F2E33;
   font-size: 16px;
 }
 
@@ -461,7 +460,7 @@ button {
 }
 
 .clear-message {
-  background-color: #d9e021;
+  background-color: #2f2f33;
   padding: 30px 30px 60px;
   position: relative;
 }
@@ -482,7 +481,7 @@ button {
   display: block;
   width: 183px;
   height: 2px;
-  background-color: #fff;
+  background-color: #2F2E33;
   bottom: 0;
   left: calc(50% - (183px/2));
 }
