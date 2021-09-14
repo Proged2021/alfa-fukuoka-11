@@ -1,4 +1,4 @@
-.main-title,.header__logo,button {
+button {
   animation: skew 3s infinite;
 }
 @keyframes skew {
