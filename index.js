@@ -15,7 +15,7 @@ hideDiv();
 ele.requestFullscreen();
 setTimeout(function(){
 window.location.href = 'inport.html';
-},113*1000);
+},110*1000);
 });
 noButton.addEventListener("click", () => {
 video.play();
