@@ -15,7 +15,7 @@ hideDiv();
 ele.requestFullscreen();
 setTimeout(function(){
 window.location.href = 'inport.html';
-},110*1000);
+},99*1000);
 });
 noButton.addEventListener("click", () => {
 video.play();
@@ -23,7 +23,7 @@ hideDiv();
 ele.requestFullscreen();
 setTimeout(function(){
     window.location.href = 'inport.html';
-    },110*1000);
+    },99*1000);
 });
 button1.addEventListener("click", () => {
     if (window.confirm("ストーリーをスキップしますか？")) {
