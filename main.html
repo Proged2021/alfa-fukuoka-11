@@ -102,25 +102,25 @@ Youtube貼り付けここまで -->
             -------------------------------------------------------------------------------------------------------->
             <section v-if="clear['stage1']" v-bind:class="{isClear:clear['stage1']}"
             class="section section--clear bg-color--gray">
-            <!-- <div class="container">
-              <div class="clear-message"> -->
-                <video src="video.mp4" autoplay muted></video>
-                <!-- <div class="clear-message__title">STAGE：１ クリア！</div>
+            <div class="container">
+              <div class="clear-message">
+                <!-- <video src="video.mp4" autoplay muted></video> -->
+                <div class="clear-message__title">STAGE：１ クリア！</div>
                 <div class="clear-message__content">辛くもその『第一ラウンド』とやらをクリアしたのだが<br>
                 奴はこの程度では許してくれないらしい。<br>
                 「これ、やっぱ観覧車だよなぁ」<br />
                 そう呟いた角屋 尚史　かどや たかふみに追従するように命も首肯した。<br>
                 命が突然「そういや、観覧車って回ってたかな？」と言った。<br>
                 だが私や尚史、命も覚えておらず首を傾げるだけだ。結局行って見ないとわからないと言う結論に至り<br />
-                私たちは重い腰を持ち上げて歩き出した。<br /> -->
-                <!-- <button v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage2'"
+                私たちは重い腰を持ち上げて歩き出した。<br />
+             <button v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage2'"
                   class="clear-message__btn btn">次のステージへ<svg class="btn__arrow">
                     <use xlink:href="#arrow"></use>
-                  </svg></button> -->
-                  <button v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage2'">次へ</button>
-              <!-- </div>
-            </div> -->
-        </section>
+                  </svg></button>
+                  <!-- <button v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage2'">次へ</button> -->
+              </div>
+            </div>
+        </section> 
         <!-- STAGE1クリア画面　ここまで -->
         <!------------------------------------------------------------------------------------------------------
           ステージを全問正解するとclear['stage1']がtrusになります。
