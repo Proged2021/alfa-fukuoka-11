@@ -501,10 +501,9 @@ background-color: #2f2e33;
 /********************
 * Utility
 ********************/
-.text-center {
+.text-centerexit {
   text-align: center;
-  color: rgb(226, 226, 226);
-  
+  color: rgb(252, 252, 252);
 }
 
 .text-left {
