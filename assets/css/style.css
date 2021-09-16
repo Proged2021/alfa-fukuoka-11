@@ -308,18 +308,18 @@ background-color: #2f2e33;
   line-height: 1.06667;
   margin: 0;
   padding-bottom: 15px;
-  color: #3c8699;
+  color: #dadada;
 }
 
 .section-title--border::after {
   position: absolute;
   bottom: 0;
-  left: calc(50% - 95px);
+  left: calc(50% - 250px);
   display: block;
   content: '';
   background-color: #fff;
   height: 2.6px;
-  width: 190px;
+  width: 500px;
 }
 
 /******************
@@ -503,6 +503,8 @@ background-color: #2f2e33;
 ********************/
 .text-center {
   text-align: center;
+  color: rgb(226, 226, 226);
+  
 }
 
 .text-left {
